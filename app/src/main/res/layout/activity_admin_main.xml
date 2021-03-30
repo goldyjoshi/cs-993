@@ -11,73 +11,74 @@
         android:layout_width="84dp"
         android:layout_height="22dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="140dp"
         android:text="Add "
+        android:textColor="@color/dark_blue"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rBProject1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/rBProject1" />
 
     <TextView
         android:id="@+id/buttonViewProject"
         android:layout_width="86dp"
         android:layout_height="21dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
         android:text="View"
+        android:textColor="@color/dark_blue"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRemoveProject"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButtonViewP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonProject" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonViewP" />
 
     <TextView
         android:id="@+id/buttonRemoveProject"
         android:layout_width="73dp"
         android:layout_height="17dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
         android:text="Remove"
+        android:textColor="@color/dark_blue"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButtonRemoveP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonViewProject" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonRemoveP" />
 
     <TextView
         android:id="@+id/assignProject"
         android:layout_width="73dp"
         android:layout_height="21dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
         android:text="Assign "
+        android:textColor="@color/dark_blue"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButtonAssignP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveProject" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonAssignP" />
 
     <RadioButton
         android:id="@+id/rBProject1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
         android:text="Project"
         app:layout_constraintEnd_toStartOf="@+id/addRbtask2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
     <RadioButton
         android:id="@+id/addRbtask2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:text="Task"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/rBProject1" />
 
     <RadioButton
         android:id="@+id/radioButtonViewP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Project"
         app:layout_constraintEnd_toStartOf="@+id/radioButtonViewT"
         app:layout_constraintTop_toBottomOf="@+id/rBProject1" />
@@ -86,8 +87,8 @@
         android:id="@+id/radioButtonAssignP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Project"
         app:layout_constraintEnd_toStartOf="@+id/radioButtonAssignTask"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonRemoveP" />
@@ -96,80 +97,81 @@
         android:id="@+id/radioButtonAssignTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:text="Task"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonRemoveT" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonAssignP" />
 
     <RadioButton
         android:id="@+id/radioButtonRemoveT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:text="Task"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonViewT" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonRemoveP" />
 
     <RadioButton
         android:id="@+id/radioButtonViewT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:text="Task"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addRbtask2" />
+        app:layout_constraintTop_toTopOf="@+id/radioButtonViewP" />
 
     <RadioButton
         android:id="@+id/radioButtonRemoveP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Project"
         app:layout_constraintEnd_toStartOf="@+id/radioButtonRemoveT"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonViewP" />
 
     <Button
-        android:id="@+id/buttonSignup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="My Account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="42dp"
         android:text="View History"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_home"
+        android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Admin name"
+        android:layout_marginTop="50dp"
+        android:text="WELCOME ADMIN"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
