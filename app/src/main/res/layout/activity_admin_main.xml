@@ -54,6 +54,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/radioButtonAssignP" />
 
+    <TextView
+        android:id="@+id/assignProject2"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="40dp"
+        android:text="Book or Remove Time"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bookTimeRadioBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookTimeRadioBtn" />
+
     <RadioButton
         android:id="@+id/rBProject1"
         android:layout_width="wrap_content"
@@ -78,9 +90,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Project"
-        app:layout_constraintEnd_toStartOf="@+id/radioButtonViewT"
+        android:text="Project/Task"
+        app:layout_constraintStart_toStartOf="@+id/rBProject1"
         app:layout_constraintTop_toBottomOf="@+id/rBProject1" />
 
     <RadioButton
@@ -88,68 +99,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Project"
-        app:layout_constraintEnd_toStartOf="@+id/radioButtonAssignTask"
+        android:text="Project/Task"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonRemoveP"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonRemoveP" />
 
     <RadioButton
-        android:id="@+id/radioButtonAssignTask"
+        android:id="@+id/bookTimeRadioBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:text="Task"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButtonAssignP" />
-
-    <RadioButton
-        android:id="@+id/radioButtonRemoveT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:text="Task"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButtonRemoveP" />
-
-    <RadioButton
-        android:id="@+id/radioButtonViewT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:text="Task"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButtonViewP" />
+        android:layout_marginTop="24dp"
+        android:text="Project/Task"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonAssignP"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAssignP" />
 
     <RadioButton
         android:id="@+id/radioButtonRemoveP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Project"
-        app:layout_constraintEnd_toStartOf="@+id/radioButtonRemoveT"
+        android:text="Project/Task"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonViewP"
         app:layout_constraintTop_toBottomOf="@+id/radioButtonViewP" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
-        android:text="View History"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/ic_home"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView50"
