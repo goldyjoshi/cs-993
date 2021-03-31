@@ -14,41 +14,6 @@ public class AdminMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_main);
-        RadioButton assign = findViewById(R.id.radioButtonAssignTask);
-        assign.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, AssignActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        RadioButton assignTask = findViewById(R.id.radioButtonAssignP);
-        assignTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, AssignActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        RadioButton viewProject = findViewById(R.id.radioButtonViewP);
-        viewProject.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, ViewProjectActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        RadioButton viewTask = findViewById(R.id.radioButtonViewT);
-        viewTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, ViewProjectActivity.class);
-                startActivity(intent);
-            }
-        });
 
         RadioButton addProject = findViewById(R.id.rBProject1);
         addProject.setOnClickListener(new View.OnClickListener() {
@@ -63,10 +28,20 @@ public class AdminMainActivity extends AppCompatActivity {
         addTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, AddProjectActivity.class);
+                Intent intent = new Intent(AdminMainActivity.this, TaskActivity.class);
                 startActivity(intent);
             }
         });
+
+        RadioButton viewProject = findViewById(R.id.radioButtonViewP);
+        viewProject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminMainActivity.this, ViewProjectActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         RadioButton removeProject = findViewById(R.id.radioButtonRemoveP);
         removeProject.setOnClickListener(new View.OnClickListener() {
@@ -77,17 +52,23 @@ public class AdminMainActivity extends AppCompatActivity {
             }
         });
 
-        RadioButton removeTask = findViewById(R.id.radioButtonRemoveT);
-        removeTask.setOnClickListener(new View.OnClickListener() {
+        RadioButton assignTask = findViewById(R.id.radioButtonAssignP);
+        assignTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminMainActivity.this, RemoveProjectActivity.class);
+                Intent intent = new Intent(AdminMainActivity.this, AssignActivity.class);
                 startActivity(intent);
             }
         });
 
-
-
+        RadioButton bookTime = findViewById(R.id.bookTimeRadioBtn);
+        assignTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminMainActivity.this, BookTimeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -14,7 +14,7 @@ public class TimeBookerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_booker);
-        RadioButton bookTimeProject = findViewById(R.id.timeBookProjectradioButton);
+        Button bookTimeProject = findViewById(R.id.addSubmitTimeBtn);
         bookTimeProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,14 +23,6 @@ public class TimeBookerActivity extends AppCompatActivity {
             }
         });
 
-        RadioButton bookTimeTask = findViewById(R.id.timeBookTaskradioButton);
-        bookTimeTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(TimeBookerActivity.this, BookTimeActivity.class);
-                startActivity(intent);
-            }
-        });
         Button setReminder = findViewById(R.id.buttonSetReminder);
         setReminder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +31,5 @@ public class TimeBookerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
